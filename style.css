@@ -24,6 +24,10 @@ nav{
     font-size: 25px;
 }
 
+.linkNav:hover{
+    border-bottom: solid 3px #ffff;
+}
+
 .imgNosotros{
     height: 300px;
 }
