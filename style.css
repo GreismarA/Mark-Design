@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #FF119F;
+}
+
+nav{
+    margin: 0 5px;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+.fa-bars{
+    font-size: 25px;
+}
+
+.imgNosotros{
+    height: 300px;
+}
+
+.pink{
+    background-color: #FF119F;
+}
+
+.imgPortfolio{
+    width: 400px;
+    height: 400px;
+}
+
+.imgEquipo{
+    width: 300px;
+}
+
+.buttonSuscrib{
+    margin-left: -5px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .imgPortfolio{
+        width: 600px;
+        height: 550px;
+    }
+    .imgEquipo{
+        width: 450px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1024px) {
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+
+    .imgPortfolio{
+        width: 300px;
+        height: 650px;
+    }
+}
+
+@media only screen and (min-width: 1280px){
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+
+    .imgNosotros{
+        width: 600px;
+        height: 400px;
+    }
+
+    .imgPortfolio{
+        width: 400px;
+    }
+
+    .imgEquipo{
+        width: 600px;
+    }
+}
