@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="shortcut icon" href="./img/logo-removebg-preview.png">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/design.png">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Mark Design</title>
     <!-- Aquí van los scripts -->
     <!-- Tailwind -->
@@ -17,30 +20,45 @@
 </head>
 
 <body>
-    <header>
-        <nav class="flex justify-between items-center md:justify-evenly lg:h-20 xl:justify-around">
-            <div>
-                <img src="./img/logo-removebg-preview-removebg-preview.png" alt="logo" class="logo">
-            </div>
-            <ul class="hidden md:flex gap-4 text-white lg:gap-x-6 text-xl xl:gap-10">
+    <header class="h-16 bg-white fixed z-10 w-full md:h-20">
+        <nav class="flex justify-between items-center h-full md:justify-evenly xl:justify-around">
+            <a href="./index.html">
+                <img src="./img/design.png" alt="logo" class="logo">
+            </a>
+            <button class="md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="ulNav hidden md:flex gap-4 lg:gap-x-6 text-xl xl:gap-10" data-aos="zoom-in">
                 <li><a href="#nosotros" class="linkNav">Nosotros</a></li>
                 <li><a href="#servicios" class="linkNav">Servicios</a></li>
                 <li><a href="#portfolio" class="linkNav">Portfolio</a></li>
                 <li><a href="#equipo" class="linkNav">Equipo</a></li>
                 <li><a href="#contactanos" class="linkNav">Contáctanos</a></li>
             </ul>
-            <div class="flex md:hidden">
-                <i class="fa-solid fa-bars text-white"></i>
-            </div>
         </nav>
     </header>
-    <main>
-        <img src="./img/img2.webp" alt="Diseño 3D" class="w-full">
+    <main class="pt-16 md:pt-20">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+        <p id='head1' class='textPrincipal'>Bienvenido a Mark Design </p>
+        <p id='head2' class='textPrincipal'>Diseños atractivos</p>
+        <p id='head3' class='textPrincipal'>simples e innovadores</p>
+        <p id='head4' class='textPrincipal'>tu mejor opción</p>
+        <p id='head5' class='textPrincipal'>Mark Design</p>
+        <div class='light x1'></div>
+        <div class='light x2'></div>
+        <div class='light x3'></div>
+        <div class='light x4'></div>
+        <div class='light x5'></div>
+        <div class='light x6'></div>
+        <div class='light x7'></div>
+        <div class='light x8'></div>
+        <div class='light x9'></div>
     </main>
     <section id="nosotros"
-        class="flex flex-col gap-y-14 lg:flex-row justify-center items-center gap-x-14 py-12 xl:py-28 xl:gap-x-12">
-        <div class="mx-6 lg:w-6/12 md:flex md:flex-col md:gap-y-3 md:items-center xl:gap-y-4">
-            <h1 class="text-2xl font-bold pb-6 lg:text-4xl xl:text-5xl">¡Hola! Somos Mark Design</h1>
+        class="flex flex-col gap-y-14 lg:flex-row justify-center items-center gap-x-14 py-12 xl:py-28 xl:gap-x-12"
+        data-aos="zoom-in">
+        <div class="mx-6 lg:w-6/12 flex flex-col gap-y-5 md:items-center xl:gap-y-4">
+            <h1 class="text-2xl font-bold pb-3 lg:text-4xl lg:pb-6 xl:text-5xl">¡Hola! Somos Mark Design</h1>
             <p class="text-gray-600 xl:text-xl">Nos gusta el café, el rock & roll, las tendencias, las tipografías, los
                 patterns, los viernes, la lluvia,
                 el arte y la buenas vibras. Amamos el diseño. Tenemos un trastorno completamente obsesivo con la
@@ -50,11 +68,11 @@
                 comunicacional que necesitan. Somos un estudio de diseño multidiciplinario, intinerante y dinámico.</p>
         </div>
         <div>
-            <img src="./img/diseñadora.svg" alt="Diseñadora" class="imgNosotros w-full">
+            <img src="./img/diseñadora.svg" alt="Diseñadora" class="imgNosotros w-full" data-aos="fade-up">
         </div>
     </section>
     <section id="servicios" class="pink text-white flex flex-col gap-y-12 py-12 xl:flex-row xl:py-24 xl:px-20">
-        <div class="flex flex-col gap-y-3 items-center mx-6 xl:text-center">
+        <div class="flex flex-col gap-y-3 items-center mx-6 xl:text-center" data-aos="fade-up">
             <i class="fa-solid fa-image text-4xl"></i>
             <h3 class="text-2xl font-semibold lg:text-3xl">Diseño Gráfico</h3>
             <p class="lg:text-xl xl:text-lg">Diseño de marca,identidad corporativa, diseño editorial, logotipos,
@@ -62,14 +80,14 @@
                 personales, revistas,
                 folletos, flyers, catálogos, brochures. Tapas de libros. Diseño de packaging.</p>
         </div>
-        <div class="flex flex-col gap-y-3 items-center mx-6 xl:text-center">
+        <div class="flex flex-col gap-y-3 items-center mx-6 xl:text-center" data-aos="fade-up">
             <i class="fa-solid fa-chart-simple text-4xl"></i>
             <h3 class="text-2xl font-semibold lg:text-3xl">Marketing</h3>
             <p class="lg:text-xl xl:text-lg">Planificación estratégica, email marketing y newsletters. Posicionamiento
                 orgánico-SEO. Google
                 AdWords-SEM, Facebooks/Instagram Ads. Publicidades en medios digitales.</p>
         </div>
-        <div class="flex flex-col gap-y-3 items-center mx-6 xl:text-center">
+        <div class="flex flex-col gap-y-3 items-center mx-6 xl:text-center" data-aos="fade-up">
             <i class="fa-solid fa-share-nodes text-4xl"></i>
             <h3 class="text-2xl font-semibold lg:text-3xl">Social Media</h3>
             <p class="lg:text-xl xl:text-lg">Creación, diseño y gestión de redes sociales. Creación de una comunidad,
@@ -78,7 +96,7 @@
                 redacción creativa, community managment, fidelización a tu alcance.</p>
         </div>
     </section>
-    <section id="portfolio" class="flex flex-col items-center py-12 lg:gap-y-14">
+    <section id="portfolio" class="flex flex-col items-center py-12 lg:gap-y-14" data-aos="fade-up">
         <h2 class="text-3xl font-bold">Portfolio</h2>
         <div class="lg:flex gap-x-6">
             <img src="./img/diseño1.jpg" alt="diseño" class="imgPortfolio py-2 rounded-3xl">
@@ -92,8 +110,8 @@
         </div>
     </section>
     <section id="equipo" class="pink text-white py-12 flex flex-col gap-y-8 items-center">
-        <img src="./img/equipo.svg" alt="team" class="imgEquipo pb-12">
-        <div class="mx-6 flex gap-x-6 md:w-3/4">
+        <img src="./img/equipo.svg" alt="team" class="imgEquipo pb-12" data-aos="fade-up">
+        <div class="mx-6 flex gap-x-6 md:w-3/4" data-aos="fade-up">
             <div>
                 <i class="fa-solid fa-face-grin-wide text-3xl"></i>
             </div>
@@ -103,7 +121,7 @@
                     de nuestro equipo.</p>
             </div>
         </div>
-        <div class="mx-6 flex gap-x-6 md:w-3/4">
+        <div class="mx-6 flex gap-x-6 md:w-3/4" data-aos="fade-up">
             <div>
                 <i class="fa-solid fa-star text-3xl"></i>
             </div>
@@ -113,7 +131,7 @@
                     encontrarte trabajando" Picasso.</p>
             </div>
         </div>
-        <div class="mx-6 flex gap-x-6 md:w-3/4">
+        <div class="mx-6 flex gap-x-6 md:w-3/4" data-aos="fade-up">
             <div>
                 <i class="fa-solid fa-bolt text-3xl"></i>
             </div>
@@ -126,12 +144,12 @@
 
     </section>
     <section id="contactanos" class="flex flex-col items-center gap-y-12 py-12">
-        <h2 class="text-3xl font-bold">Contáctanos</h2>
+        <h2 class="text-3xl font-bold" data-aos="fade-up">Contáctanos</h2>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15705.32384318906!2d-68.00629387600516!3d10.234868733045019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e805d0757c3bb07%3A0x91f7421c04c9b60f!2sMa%C3%B1ongo%2C%20Naguanagua%2C%20Carabobo!5e0!3m2!1ses-419!2sve!4v1672460473357!5m2!1ses-419!2sve"
             width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" class="md:w-10/12 md:h-96"></iframe>
-        <div class="flex flex-col items-start w-full px-6 gap-y-8 xl:items-center">
+            referrerpolicy="no-referrer-when-downgrade" class="md:w-10/12 md:h-96" data-aos="fade-up"></iframe>
+        <div class="flex flex-col items-start w-full px-6 gap-y-8 xl:items-center" data-aos="fade-up">
             <div class="flex gap-4">
                 <i class="fa-solid fa-location-dot text-2xl text-pink-500"></i>
                 <p>Avenida 2, Mañongo, Valencia</p>
@@ -145,7 +163,7 @@
                 <p>+58 424 5559995</p>
             </div>
         </div>
-        <form action="" class="flex flex-col items-center w-10/12 gap-y-3 xl:w-7/12">
+        <form action="" class="flex flex-col items-center w-10/12 gap-y-3 xl:w-7/12" data-aos="fade-up">
             <input type="text" name="nombre" placeholder="Nombre"
                 class="border-solid border w-full outline-none py-2 pl-1">
             <input type="email" name="email" placeholder="Email"
@@ -189,6 +207,12 @@
         </div>
         <p class="text-center pb-6">© Mark Design 2022</p>
     </footer>
+    <!-- Aquí van los scripts -->
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
